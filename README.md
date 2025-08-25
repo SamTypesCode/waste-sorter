@@ -1,87 +1,74 @@
-# Welcome to React Router!
+<div align="center">
+  <h1>Waste Sorter</h1>
 
-A modern, production-ready template for building full-stack React applications using React Router.
+  <p>
+    This project was created for the <a href="https://designchampionship.in/" target="_blank">Design Championship 2025</a> by <a href="https://github.com/SamTypesCode">Sampreet Singh</a>. The project is a waste Sorter that lets users upload an image or text description of an item to predict whether it’s recyclable, compostable, or trash. It also offers eco-friendly disposal tips to help reduce environmental impact.
+  </p>
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+  <p>
+    <img alt="React" src="https://img.shields.io/badge/React-4c84f3?style=for-the-badge&logo=react&logoColor=white" />
+    <img alt="TypeScript" src="https://img.shields.io/badge/-TypeScript-black?style=for-the-badge&logoColor=white&logo=typescript&color=3178C6" />
+    <img alt="Tailwind CSS" src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" />
+    <img alt="React Router" src="https://img.shields.io/badge/-React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white" />
+  </p>
+</div>
 
-## Features
+## <p name="table">Table of Contents</p>
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+- [Table of Contents](#table-of-contents)
+- [Introduction](#introduction)
+- [Tech Stack](#tech-stack)
+- [Features](#features)
+- [Demo](#demo)
+- [Quick Start](#quick-start)
+- [License](#license)
+- [Contact/Author](#contactauthor)
 
-## Getting Started
+## <p name="introduction">Introduction</p>
 
-### Installation
+Waste sorter is a tool that allows users to upload an image of an item or describe it in text, and automatically predicts whether the item is recyclable, compostable or trash. The system provides practical tips for proper eco-friendly disposal, helping users make informed decisions and reduce environmental impact.
 
-Install the dependencies:
+## <p name="tech-stack">Tech Stack</p>
 
-```bash
-npm install
-```
+[Next.js](https://nextjs.org/) is a React framework for building fast, SEO-friendly web applications, used here to create dynamic pages with server-side rendering and optimized performance.
 
-### Development
+[React](https://react.dev/) is a JavaScript library for building user interfaces, used to create responsive and interactive components throughout the app.
 
-Start the development server with HMR:
+[TypeScript](https://www.typescriptlang.org/) is a typed superset of JavaScript, used to catch errors during development and improve code maintainability.
 
-```bash
-npm run dev
-```
+[TailwindCSS](https://tailwindcss.com/) is a utility-first CSS framework, used to quickly style the app consistently and create responsive layouts.
 
-Your application will be available at `http://localhost:5173`.
+[React Router](https://reactrouter.com/) a routing library for [React](https://react.dev/), used to handle page navigation and manage different views in the app.
 
-## Building for Production
+## <p name="features">Features</p>
 
-Create a production build:
+1. Upload an image of an item or provide a text description for instant waste classification.
+2. Automatically predicts whether the item is recyclable, compostable, or general trash.
+3. Get practical, eco-friendly disposal tips tailored to the identified waste type.
+4. Clean and responsive interface for a smooth and intuitive user experience.
+5. Helps users make informed decisions to reduce environmental impact.
+6. Backed by a reliable AI model ensuring accurate and consistent predictions.
 
-```bash
-npm run build
-```
+## <p name="demo">Demo</p>
 
-## Deployment
+The website is currently under development. This section will be updated once the project reaches a stable or final version.
 
-### Docker Deployment
+## <p name="quick-start">Quick Start</p>
 
-To build and run using Docker:
+The website is currently under development. This section will be updated once the project reaches a stable or final version.
 
-```bash
-docker build -t my-app .
+## <p name="license">License</p>
 
-# Run the container
-docker run -p 3000:3000 my-app
-```
+This project is licensed under the MIT License.
 
-The containerized application can be deployed to any platform that supports Docker, including:
+You are free to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software, provided that you include the original copyright notice and this permission notice in all copies or substantial portions of the software.
 
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
+For full details, see the [LICENSE](https://github.com/SamTypesCode/kidpreneur/blob/main/LICENSE) file.
 
-### DIY Deployment
+## <p name="author">Contact/Author</p>
 
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
+GitHub: https://github.com/SamTypesCode
 
-Make sure to deploy the output of `npm run build`
+Email: preet.samsam@gmail.com
 
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
+You can also reach me via GitHub Issues for questions or feature requests.
