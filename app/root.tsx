@@ -27,8 +27,30 @@ export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {/* <!-- Charset & viewport --> */}
+        <meta charSet="UTF-8" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+        />
+
+        {/* <!-- Basic SEO --> */}
+        <title>Waste Sorter</title>
+        <meta
+          name="description"
+          content="A waste Sorter that lets users upload an image or text description of an item to predict whether it’s recyclable, compostable, or trash. It also offers eco-friendly disposal tips to help reduce environmental impact."
+        />
+        <meta
+          name="keywords"
+          content="waste sorter, recycling tool, compostable items, trash classification, eco-friendly disposal, waste management, sustainable living, recycling guide, composting tips, trash separation, green technology, reduce waste, environmental impact, waste recognition, image-based waste sorter, text-based waste sorter, smart recycling, waste prediction, eco tips, sustainable waste solutions"
+        />
+
+        <meta name="author" content="Sampreet Singh" />
+
+        {/* <!-- Preconnect (performance) --> */}
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+
         <Meta />
         <Links />
       </head>
