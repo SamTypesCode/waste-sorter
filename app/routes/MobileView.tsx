@@ -37,19 +37,21 @@ export default function MobileView({ className }: { className?: string }) {
     }
   }
 
-  function handleFileChange(e: React.ChangeEvent<HTMLInputElement>) {
-    const file = e.target.files && e.target.files[0] ? e.target.files[0] : null;
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    console.log("File input changed", e.target.files);
+    const file = e.target.files?.[0] || null;
     setImage(file);
-  }
+  };
 
   return (
     <form onSubmit={handleSubmit} className={className}>
       <h1>Waste Sorter (Test)</h1>
 
       <div>
-        <label>
+        <label htmlFor="description">
           Description (optional):
           <textarea
+            id="description"
             value={text}
             onChange={(e) => setText(e.target.value)}
             placeholder="e.g., 'paper cup with plastic lid'"
@@ -58,15 +60,21 @@ export default function MobileView({ className }: { className?: string }) {
       </div>
 
       <div>
-        <label>
-          Image (optional):
-          <input type="file" accept="image/*" onChange={handleFileChange} />
-        </label>
+        <label htmlFor="fileInput">Image (optional):</label>
+        <input
+          id="fileInput"
+          type="file"
+          accept="image/*,android/allowCamera"
+          capture="environment"
+          onChange={handleFileChange}
+        />
       </div>
 
       <button type="submit" disabled={loading}>
         {loading ? "Submitting..." : "Submit"}
       </button>
+
+      {image && <img src={URL.createObjectURL(image)} alt="preview" />}
 
       {error && <div>Error: {error}</div>}
 
